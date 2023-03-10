@@ -16,7 +16,7 @@ class CreateApiRequestsTable extends Migration
         Schema::create('api_requests', function (Blueprint $table) {
             $table->id();
             $table->string('api_called')->nullable();
-            $table->timestamps();
+            $table->string('api_called_time')->nullable();
         });
     }
 
